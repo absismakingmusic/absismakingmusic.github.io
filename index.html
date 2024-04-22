@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>90s Space Music Vibes</title>
+  <style>
+    body {
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      position: relative; /* Ensure absolute positioning of the images is relative to the body */
+    }
+    .animate-character {
+      text-transform: uppercase;
+      background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-text 5s ease infinite;
+      display: inline-block;
+      font-size: 35px;
+    }
+
+    @keyframes gradient-text {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 1px;
+      text-align: center;
+      animation: pulse 1.5s infinite alternate;
+    }
+    header:hover {
+      transform: scale(1.05);
+    }
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    nav {
+      background-color: #ffffff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 10px 20px;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: #000;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      height: 100vh;
+    }
+    img.left {
+      left: 0;
+    }
+    img.right {
+      right: 0;
+    }
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+  <header>
+    <h1 class="animate-character">T H E M A N D U S</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Music</a>
+    <a href="#">Events</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About Us</h2>
+    <img class="left" src="rocket2bar.gif" alt="Space GIF">
+    <img class="right" src="rocket2bar.gif" alt="Space GIF">
+    <p>We are a band.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 THEMANDUS All rights reserved.</p>
+  </footer>
+</body>
+</html>
